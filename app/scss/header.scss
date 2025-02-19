@@ -101,6 +101,9 @@
         position: absolute;
         left: -19px;
         top: 50px;
+        .main__stroke-body-wrap{
+            animation: tickerTwo 10s linear infinite;
+        }
     }
 
     &__stroke-body {
@@ -139,6 +142,15 @@
         transform: translateX(-50.5%);
     }
 }
+@keyframes tickerTwo {
+    0% {
+        transform: translateX(-50.5%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
 
 .header {
     width: 100%;
@@ -152,11 +164,11 @@
         border-bottom: 1px solid var(--grey);
 
         &-logo {
-            width: 127px;
+            width: 240px;
             height: 36px;
 
             img {
-                width: 100%;
+                width: auto;
                 height: 100%;
             }
         }
