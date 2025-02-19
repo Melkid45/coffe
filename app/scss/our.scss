@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Adieu';
+    src: url(../fonts/adieu.woff);
+}
+
+:root{
+    --adieu: 'Adieu';
+    --rubik: "Rubik";
+
+
+    /*Colors*/
+    --black: #1D1D1B;
+    --grey: #878787;
+    --med-grey: #E9E8E8;
+    --white: #FFFFFF;
+    --white-so: #FFFFFF26;
+    --yellow: #F9C000;
+    --yellow-dark: #E5A71A;
+    --green-dark: #14463A;
+    --beige: #FFF6F0;
+    --beige-dark: #F5DAC7;
+    --blue: #3B6FE7;
+    --green: #15CF74;
+    --red: #C14965;
+    --red-dark: #9A3A51;
+}
+
+/*Font*/
+
+.h1{
+    font-family: var(--adieu);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 61.6px;
+    letter-spacing: 0%;
+}
+.h2{
+    font-family: var(--adieu);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 52.8px;
+    letter-spacing: 0%;
+}
+.h3-regular{
+    font-family: var(--adieu);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: 0px;
+}
+
+.h3-regular{
+    font-family: var(--rubik);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: 0px;
+}
+.h4-regular{
+    font-family: var(--adieu);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26.4px;
+    letter-spacing: 0px;
+}
+.h4-medium{
+    font-family: var(--rubik);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26.4px;
+    letter-spacing: 0px;
+}
+
+.h5-regular{
+    font-family: var(--adieu);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+.h5-medium{
+    font-family: var(--rubik);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+.desc-regular{
+    font-family: var(--rubik);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+}
+
+.desc-medium{
+    font-family: var(--rubik);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+}
+
+
+.low-regular{
+    font-family: var(--rubik);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 0px;
+}
+.low-medium{
+    font-family: var(--rubik);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 0%;
+}
+
+
+.caption-regular{
+    font-family: var(--rubik);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.4px;
+    letter-spacing: 0px;
+}
+
+.caption-medium{
+    font-family: var(--rubik);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.4px;
+    letter-spacing: 0px;
+}
+
+
+
+.btn-black{
+    transition: all 0.3s ease;
+}
+.btn-black:hover{
+    background: var(--yellow) !important;
+    border-color: transparent;
+}
+.btn-yellow{
+    transition: all 0.3s ease;
+}
+.btn-yellow:hover{
+    background: var(--yellow-dark) !important;
+}
+
+.links-white{
+    transition: all 0.3s ease;
+}
+.links-white:hover{
+    color: var(--yellow) !important;
+    svg{
+        path{
+            stroke: var(--yellow);
+        }
+    }
+}
+
+.links-yellow{
+    transition: all 0.3s ease;
+}
+.links-yellow:hover{
+    color: var(--white) !important;
+    svg{
+        path{
+            stroke: var(--white);
+        }
+    }
+}
+
+.li-active{
+    color: var(--yellow) !important;
+    svg{
+        rotate: 180deg;
+        path{
+            stroke: var(--yellow);
+        }
+    }
+}

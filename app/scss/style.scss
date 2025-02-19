@@ -1,0 +1,14 @@
+@import './reset';
+html{
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1440px;
+    background: var(--beige);
+    margin: 0 auto;
+}
+.container{
+    max-width: 1408px;
+    width: 100%;
+    margin: 0 auto;
+}

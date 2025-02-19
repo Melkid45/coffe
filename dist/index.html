@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.min.css">
+    <title>Kus Coffee</title>
+</head>
+<body>
+    <div class="main__wrap">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="/" class="header__body-logo">
+                        <img src="images/dist/logo.svg" alt="">
+                    </a>
+                    <nav class="header__body-menu">
+                        <ul>
+                            <li class="low-medium active links-white">
+                                <a href="">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="low-medium links-white">
+                                <a href="">
+                                    Daily Inspiration
+                                </a>
+                            </li>
+                            <li class="low-medium menu-recipes links-white">
+                                Recipes
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8.00081 10.58L13 6" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <ul class="menu__wrapper">
+                                    <li>
+                                        <a class="btn-black" href="">
+                                            Spices
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-black" href="">
+                                            Fruits
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-black" href="">
+                                            Syrups
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-black" href="">
+                                            Latte
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-black" href="">
+                                            Unusual
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-black" href="">
+                                            Gorky
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-black" href="">
+                                            Sweet
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-black" href="">
+                                            Spicy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="low-medium links-white">
+                                Ingredients
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8.00081 10.58L13 6" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                            <li class="low-medium links-white">
+                                <a href="">
+                                    Club
+                                </a>
+                            </li>
+                            <li class="low-medium links-white">
+                                <a href="">
+                                    Shop
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__body-action">
+                        <a href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.80625 6.20641C4.70639 5.30655 5.92707 4.80104 7.19985 4.80104C8.47264 4.80104 9.69332 5.30655 10.5935 6.20641L11.9999 7.61161L13.4063 6.20641C13.849 5.74796 14.3787 5.38229 14.9643 5.13072C15.5499 4.87916 16.1798 4.74675 16.8171 4.74121C17.4545 4.73567 18.0865 4.85712 18.6764 5.09847C19.2663 5.33982 19.8023 5.69623 20.2529 6.14691C20.7036 6.5976 21.06 7.13353 21.3014 7.72343C21.5427 8.31333 21.6642 8.9454 21.6587 9.58274C21.6531 10.2201 21.5207 10.8499 21.2691 11.4356C21.0176 12.0212 20.6519 12.5508 20.1934 12.9936L11.9999 21.1884L3.80625 12.9936C2.90639 12.0935 2.40088 10.8728 2.40088 9.60001C2.40088 8.32722 2.90639 7.10654 3.80625 6.20641V6.20641Z"
+                                    stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                            <div class="circle">0</div>
+                        </a>
+                        <a href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.3999 20.5124C2.3999 16.7369 5.55419 13.6762 11.9999 13.6762C18.4456 13.6762 21.5999 16.7369 21.5999 20.5124C21.5999 21.1131 21.1617 21.6 20.6211 21.6H3.37873C2.83814 21.6 2.3999 21.1131 2.3999 20.5124Z"
+                                    stroke="white" stroke-width="1.5" />
+                                <path
+                                    d="M15.5999 5.99999C15.5999 7.98822 13.9881 9.59999 11.9999 9.59999C10.0117 9.59999 8.3999 7.98822 8.3999 5.99999C8.3999 4.01177 10.0117 2.39999 11.9999 2.39999C13.9881 2.39999 15.5999 4.01177 15.5999 5.99999Z"
+                                    stroke="white" stroke-width="1.5" />
+                            </svg>
+                        </a>
+                        <button class="btn-black">
+                            <span class="low-medium">Find Recipe</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.927 17.04L20.4001 20.4M11.4001 7.20001C13.3883 7.20001 15.0001 8.81178 15.0001 10.8M19.2801 11.44C19.2801 15.7699 15.77 19.28 11.4401 19.28C7.11018 19.28 3.6001 15.7699 3.6001 11.44C3.6001 7.11009 7.11018 3.60001 11.4401 3.60001C15.77 3.60001 19.2801 7.11009 19.2801 11.44Z"
+                                    stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__text">
+                <h1 class="h1">
+                    Discover <br>
+                    a world of <br> coffee delights
+                </h1>
+                <p class="desc-regular">
+                    Embark on a journey through our vast collection of coffee recipes, exotic blends, and expert tips
+                    designed to elevate your home barista skills and experience the pure delight of coffee mastery.
+                </p>
+                <div class="main__text-search">
+                    <input class="low-regular" placeholder="Find a recipe by ingredient ..." type="text">
+                    <button class="btn-yellow">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <img src="images/dist/main__img.webp" alt="" class="main__img">
+            <img src="images/dist/main__coffee.webp" alt="" class="main__coffee">
+            <div class="main__stroke">
+                <div class="main__stroke-body">
+                    <div class="main__stroke-body-wrap">
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Lungo</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Americano</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Glasse</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Macchiato</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Cappuccino</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Mocha</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Raf</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Lungo</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Americano</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Glasse</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Macchiato</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Cappuccino</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Mocha</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Raf</span>
+                    </div>
+                </div>
+                <div class="main__stroke-body">
+                    <div class="main__stroke-body-wrap">
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Cappuccino</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Galao</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Latte</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Cortado</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Espresso</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Doppio</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Mocha</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Cappuccino</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Galao</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Latte</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Cortado</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Espresso</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Doppio</span>
+                        <img src="images/dist/lenta.webp" alt="">
+                        <span class="h4-regular">Mocha</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <section class="attribute">
+        <div class="container">
+            <div class="attribute__body">
+                <div class="attribute__body-wrap">
+                    <div class="attribute__body-wrap-item">
+                        <div class="circle">
+                            <img src="images/dist/attr/1.svg" alt="">
+                        </div>
+                        <span class="h5-medium">Over 700 recipes</span>
+                        <p class="desc-regular">All recipes are adapted to any brewing method.</p>
+                    </div>
+                    <div class="attribute__body-wrap-item">
+                        <div class="circle">
+                            <img src="images/dist/attr/1.svg" alt="">
+    
+                        </div>
+                        <span class="h5-medium">Cooking at home</span>
+                        <p class="desc-regular">Suitable for any household equipment</p>
+                    </div>
+                </div>
+                <img class="attribute__body-img" src="images/dist/attr.webp" alt="">
+                <div class="attribute__body-wrap">
+                    <div class="attribute__body-wrap-item">
+                        <div class="circle">
+                            <img src="images/dist/attr/1.svg" alt="">
+    
+                        </div>
+                        <span class="h5-medium">Real pics and video</span>
+                        <p class="desc-regular">All images and videos were taken here by our team</p>
+                    </div>
+                    <div class="attribute__body-wrap-item">
+                        <div class="circle">
+                            <img src="images/dist/attr/1.svg" alt="">
+    
+                        </div>
+                        <span class="h5-medium">Quality guaranteed</span>
+                        <p class="desc-regular">Tried and tested combinations of accessible ingredients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="program">
+        <div class="container">
+            <div class="program__body">
+                <h2 class="h2">
+                    Your program for today
+                </h2>
+                <p class="description desc-regular">
+                    Every new day is distinct from the last, just like every new cup of coffee becomes a fresh journey of
+                    delightful discoveries for you.
+                </p>
+                <div class="program__body-wrap">
+                    <a href="" class="program__body-wrap-item">
+                        <div class="program__body-wrap-item-top">
+                            <img src="images/dist/program.webp" alt="">
+                            <div class="program__body-wrap-item-top-attr">
+                                <span class="caption-medium">Hot</span>
+                                <span class="caption-medium">Vegan</span>
+                                <span class="caption-medium">Alcohol</span>
+                            </div>
+                            <button class="program__body-wrap-item-top-like">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.80625 6.20635C4.70639 5.30649 5.92707 4.80097 7.19985 4.80097C8.47264 4.80097 9.69332 5.30649 10.5935 6.20635L11.9999 7.61155L13.4063 6.20635C13.849 5.7479 14.3787 5.38223 14.9643 5.13066C15.5499 4.8791 16.1798 4.74669 16.8171 4.74115C17.4545 4.73561 18.0865 4.85706 18.6764 5.09841C19.2663 5.33975 19.8023 5.69617 20.2529 6.14685C20.7036 6.59754 21.06 7.13347 21.3014 7.72337C21.5427 8.31327 21.6642 8.94533 21.6587 9.58268C21.6531 10.22 21.5207 10.8499 21.2691 11.4355C21.0176 12.0211 20.6519 12.5508 20.1934 12.9935L11.9999 21.1883L3.80625 12.9935C2.90639 12.0934 2.40088 10.8727 2.40088 9.59995C2.40088 8.32716 2.90639 7.10648 3.80625 6.20635V6.20635Z"
+                                        stroke="#878787" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="program__body-wrap-item-bot">
+                            <div class="program__body-wrap-item-bot-text">
+                                <span class="desc-regular">Category name</span>
+                                <p>Very big and long title name with beautiful words</p>
+                            </div>
+                            <div class="program__body-wrap-item-bot-action">
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                            stroke="#14463A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">46</span>
+                                </div>
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4951 2.71381C11.7017 2.29527 12.2985 2.29527 12.5051 2.71381L15.1791 8.13194C15.2611 8.29814 15.4196 8.41334 15.6031 8.43999L21.5823 9.30883C22.0442 9.37595 22.2286 9.94357 21.8944 10.2694L17.5678 14.4868C17.4351 14.6162 17.3745 14.8026 17.4058 14.9852L18.4272 20.9403C18.5061 21.4004 18.0233 21.7512 17.6101 21.534L12.2621 18.7224C12.0981 18.6361 11.9021 18.6361 11.738 18.7224L6.39002 21.534C5.97689 21.7512 5.49404 21.4004 5.57294 20.9403L6.59432 14.9852C6.62565 14.8026 6.56509 14.6162 6.43236 14.4868L2.10573 10.2694C1.7715 9.94357 1.95594 9.37595 2.41783 9.30883L8.39708 8.43999C8.5805 8.41334 8.73906 8.29814 8.82109 8.13194L11.4951 2.71381Z"
+                                            fill="#F9C000" stroke="#F9C000" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="program__body-wrap-item">
+                        <div class="program__body-wrap-item-top">
+                            <img src="images/dist/program.webp" alt="">
+                            <div class="program__body-wrap-item-top-attr">
+                                <span class="caption-medium">Hot</span>
+                                <span class="caption-medium">Vegan</span>
+                                <span class="caption-medium">Alcohol</span>
+                            </div>
+                            <button class="program__body-wrap-item-top-like">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.80625 6.20635C4.70639 5.30649 5.92707 4.80097 7.19985 4.80097C8.47264 4.80097 9.69332 5.30649 10.5935 6.20635L11.9999 7.61155L13.4063 6.20635C13.849 5.7479 14.3787 5.38223 14.9643 5.13066C15.5499 4.8791 16.1798 4.74669 16.8171 4.74115C17.4545 4.73561 18.0865 4.85706 18.6764 5.09841C19.2663 5.33975 19.8023 5.69617 20.2529 6.14685C20.7036 6.59754 21.06 7.13347 21.3014 7.72337C21.5427 8.31327 21.6642 8.94533 21.6587 9.58268C21.6531 10.22 21.5207 10.8499 21.2691 11.4355C21.0176 12.0211 20.6519 12.5508 20.1934 12.9935L11.9999 21.1883L3.80625 12.9935C2.90639 12.0934 2.40088 10.8727 2.40088 9.59995C2.40088 8.32716 2.90639 7.10648 3.80625 6.20635V6.20635Z"
+                                        stroke="#878787" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="program__body-wrap-item-bot">
+                            <div class="program__body-wrap-item-bot-text">
+                                <span class="desc-regular">Category name</span>
+                                <p>Very big and long title name with beautiful words</p>
+                            </div>
+                            <div class="program__body-wrap-item-bot-action">
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                            stroke="#14463A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">46</span>
+                                </div>
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4951 2.71381C11.7017 2.29527 12.2985 2.29527 12.5051 2.71381L15.1791 8.13194C15.2611 8.29814 15.4196 8.41334 15.6031 8.43999L21.5823 9.30883C22.0442 9.37595 22.2286 9.94357 21.8944 10.2694L17.5678 14.4868C17.4351 14.6162 17.3745 14.8026 17.4058 14.9852L18.4272 20.9403C18.5061 21.4004 18.0233 21.7512 17.6101 21.534L12.2621 18.7224C12.0981 18.6361 11.9021 18.6361 11.738 18.7224L6.39002 21.534C5.97689 21.7512 5.49404 21.4004 5.57294 20.9403L6.59432 14.9852C6.62565 14.8026 6.56509 14.6162 6.43236 14.4868L2.10573 10.2694C1.7715 9.94357 1.95594 9.37595 2.41783 9.30883L8.39708 8.43999C8.5805 8.41334 8.73906 8.29814 8.82109 8.13194L11.4951 2.71381Z"
+                                            fill="#F9C000" stroke="#F9C000" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="program__body-wrap-item">
+                        <div class="program__body-wrap-item-top">
+                            <img src="images/dist/program.webp" alt="">
+                            <div class="program__body-wrap-item-top-attr">
+                                <span class="caption-medium">Hot</span>
+                                <span class="caption-medium">Vegan</span>
+                                <span class="caption-medium">Alcohol</span>
+                            </div>
+                            <button class="program__body-wrap-item-top-like">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.80625 6.20635C4.70639 5.30649 5.92707 4.80097 7.19985 4.80097C8.47264 4.80097 9.69332 5.30649 10.5935 6.20635L11.9999 7.61155L13.4063 6.20635C13.849 5.7479 14.3787 5.38223 14.9643 5.13066C15.5499 4.8791 16.1798 4.74669 16.8171 4.74115C17.4545 4.73561 18.0865 4.85706 18.6764 5.09841C19.2663 5.33975 19.8023 5.69617 20.2529 6.14685C20.7036 6.59754 21.06 7.13347 21.3014 7.72337C21.5427 8.31327 21.6642 8.94533 21.6587 9.58268C21.6531 10.22 21.5207 10.8499 21.2691 11.4355C21.0176 12.0211 20.6519 12.5508 20.1934 12.9935L11.9999 21.1883L3.80625 12.9935C2.90639 12.0934 2.40088 10.8727 2.40088 9.59995C2.40088 8.32716 2.90639 7.10648 3.80625 6.20635V6.20635Z"
+                                        stroke="#878787" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="program__body-wrap-item-bot">
+                            <div class="program__body-wrap-item-bot-text">
+                                <span class="desc-regular">Category name</span>
+                                <p>Very big and long title name with beautiful words</p>
+                            </div>
+                            <div class="program__body-wrap-item-bot-action">
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                            stroke="#14463A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">46</span>
+                                </div>
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4951 2.71381C11.7017 2.29527 12.2985 2.29527 12.5051 2.71381L15.1791 8.13194C15.2611 8.29814 15.4196 8.41334 15.6031 8.43999L21.5823 9.30883C22.0442 9.37595 22.2286 9.94357 21.8944 10.2694L17.5678 14.4868C17.4351 14.6162 17.3745 14.8026 17.4058 14.9852L18.4272 20.9403C18.5061 21.4004 18.0233 21.7512 17.6101 21.534L12.2621 18.7224C12.0981 18.6361 11.9021 18.6361 11.738 18.7224L6.39002 21.534C5.97689 21.7512 5.49404 21.4004 5.57294 20.9403L6.59432 14.9852C6.62565 14.8026 6.56509 14.6162 6.43236 14.4868L2.10573 10.2694C1.7715 9.94357 1.95594 9.37595 2.41783 9.30883L8.39708 8.43999C8.5805 8.41334 8.73906 8.29814 8.82109 8.13194L11.4951 2.71381Z"
+                                            fill="#F9C000" stroke="#F9C000" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="program__body-wrap-item">
+                        <div class="program__body-wrap-item-top">
+                            <img src="images/dist/program.webp" alt="">
+                            <div class="program__body-wrap-item-top-attr">
+                                <span class="caption-medium">Hot</span>
+                                <span class="caption-medium">Vegan</span>
+                                <span class="caption-medium">Alcohol</span>
+                            </div>
+                            <button class="program__body-wrap-item-top-like">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.80625 6.20635C4.70639 5.30649 5.92707 4.80097 7.19985 4.80097C8.47264 4.80097 9.69332 5.30649 10.5935 6.20635L11.9999 7.61155L13.4063 6.20635C13.849 5.7479 14.3787 5.38223 14.9643 5.13066C15.5499 4.8791 16.1798 4.74669 16.8171 4.74115C17.4545 4.73561 18.0865 4.85706 18.6764 5.09841C19.2663 5.33975 19.8023 5.69617 20.2529 6.14685C20.7036 6.59754 21.06 7.13347 21.3014 7.72337C21.5427 8.31327 21.6642 8.94533 21.6587 9.58268C21.6531 10.22 21.5207 10.8499 21.2691 11.4355C21.0176 12.0211 20.6519 12.5508 20.1934 12.9935L11.9999 21.1883L3.80625 12.9935C2.90639 12.0934 2.40088 10.8727 2.40088 9.59995C2.40088 8.32716 2.90639 7.10648 3.80625 6.20635V6.20635Z"
+                                        stroke="#878787" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="program__body-wrap-item-bot">
+                            <div class="program__body-wrap-item-bot-text">
+                                <span class="desc-regular">Category name</span>
+                                <p>Very big and long title name with beautiful words</p>
+                            </div>
+                            <div class="program__body-wrap-item-bot-action">
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                            stroke="#14463A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">46</span>
+                                </div>
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4951 2.71381C11.7017 2.29527 12.2985 2.29527 12.5051 2.71381L15.1791 8.13194C15.2611 8.29814 15.4196 8.41334 15.6031 8.43999L21.5823 9.30883C22.0442 9.37595 22.2286 9.94357 21.8944 10.2694L17.5678 14.4868C17.4351 14.6162 17.3745 14.8026 17.4058 14.9852L18.4272 20.9403C18.5061 21.4004 18.0233 21.7512 17.6101 21.534L12.2621 18.7224C12.0981 18.6361 11.9021 18.6361 11.738 18.7224L6.39002 21.534C5.97689 21.7512 5.49404 21.4004 5.57294 20.9403L6.59432 14.9852C6.62565 14.8026 6.56509 14.6162 6.43236 14.4868L2.10573 10.2694C1.7715 9.94357 1.95594 9.37595 2.41783 9.30883L8.39708 8.43999C8.5805 8.41334 8.73906 8.29814 8.82109 8.13194L11.4951 2.71381Z"
+                                            fill="#F9C000" stroke="#F9C000" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="try">
+        <div class="container">
+            <div class="try__body">
+                <img class="try__body-img" src="images/dist/try.webp" alt="">
+                <div class="try__body-text">
+                    <h2 class="h2">
+                        Try coffee with
+                    </h2>
+                    <p class="desc-regular">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="try__body-ingredients">
+                    <div class="try__body-ingredients-wrap">
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            cardamon
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            water
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            anise
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            cardamon
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            water
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            anise
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            cardamon
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            water
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            anise
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            cardamon
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            water
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            anise
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            cardamon
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            milk
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            water
+                        </a>
+                        <a class="desc-regular btn-black" href="">
+                            anise
+                        </a>
+                    </div>
+                    <button class="try__body-ingredients-btn links-yellow">
+                        All Ingredients
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experiment">
+        <div class="container">
+            <div class="experiment__body">
+                <div class="experiment__body-text">
+                    <h2 class="h2">Experiment with different ingredients</h2>
+                    <p class="desc-regular">Use a list of 200 ingredients to choose the flavour that interests you. Create
+                        coffee with:</p>
+                </div>
+                <div class="experiment__body-categories">
+                    <div class="experiment__body-categories-item">
+                        <img src="images/dist/cat/1.jpg" alt="">
+                        <div class="experiment__body-categories-item-wrap">
+                            <div>
+                                <span class="h4-medium">Spices</span>
+                                <p class="desc-regular">+120 recipes</p>
+                            </div>
+                            <a class="btn-yellow" href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="experiment__body-categories-item">
+                        <img src="images/dist/cat/2.jpg" alt="">
+                        <div class="experiment__body-categories-item-wrap">
+                            <div>
+                                <span class="h4-medium">Alcohol</span>
+                                <p class="desc-regular">+120 recipes</p>
+                            </div>
+                            <a class="btn-yellow" href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="experiment__body-categories-item">
+                        <img src="images/dist/cat/3.jpg" alt="">
+                        <div class="experiment__body-categories-item-wrap">
+                            <div>
+                                <span class="h4-medium">Chocolate</span>
+                                <p class="desc-regular">+120 recipes</p>
+                            </div>
+                            <a class="btn-yellow" href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="experiment__body-categories-item">
+                        <img src="images/dist/cat/4.jpg" alt="">
+                        <div class="experiment__body-categories-item-wrap">
+                            <div>
+                                <span class="h4-medium">Syrups</span>
+                                <p class="desc-regular">+120 recipes</p>
+                            </div>
+                            <a class="btn-yellow" href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="experiment__body-categories-item">
+                        <img src="images/dist/cat/5.jpg" alt="">
+                        <div class="experiment__body-categories-item-wrap">
+                            <div>
+                                <p class="desc-regular">+120 recipes</p>
+                            </div>
+                            <a class="btn-yellow" href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="experiment__body-categories-item">
+                        <img src="images/dist/cat/6.jpg" alt="">
+                        <div class="experiment__body-categories-item-wrap">
+                            <div>
+                                <span class="h4-medium">Juces and fruit pulp</span>
+                                <p class="desc-regular">+120 recipes</p>
+                            </div>
+                            <a class="btn-yellow" href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="container">
+            <div class="popular__body">
+                <div class="popular__body-text">
+                    <h2 class="h2">
+                        Popular Recipe Today
+                    </h2>
+                    <p class="desc-regular">
+                        It's not difficult to prepare different types of coffee correctly! <br>
+                        Learn how to make delicious coffee using interesting ingredients from pear syrup with a spoonful of
+                        turmeric to salted caramel and banana syrup.
+                    </p>
+                </div>
+                <div class="popular__body-block">
+                    <div class="popular__body-block-item">
+                        <img src="images/dist/program.webp" alt="">
+                        <div class="popular__body-block-item-grad"></div>
+                        <span class="popular__body-block-item-hot caption-medium">
+                            Hot
+                        </span>
+                        <div class="popular__body-block-item-wrap">
+                            <span>Very big and long title name with beautiful words</span>
+                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="" class="low-medium btn-yellow">
+                                Explore Recipe
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popular__body-block-item">
+                        <img src="images/dist/program.webp" alt="">
+                        <div class="popular__body-block-item-grad"></div>
+                        <span class="popular__body-block-item-hot caption-medium">
+                            Hot
+                        </span>
+                        <div class="popular__body-block-item-wrap">
+                            <span>Very big and long title name with beautiful words</span>
+                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="" class="low-medium btn-yellow">
+                                Explore Recipe
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popular__body-block-item">
+                        <img src="images/dist/program.webp" alt="">
+                        <div class="popular__body-block-item-grad"></div>
+                        <span class="popular__body-block-item-hot caption-medium">
+                            Hot
+                        </span>
+                        <div class="popular__body-block-item-wrap">
+                            <span>Very big and long title name with beautiful words</span>
+                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="" class="low-medium btn-yellow">
+                                Explore Recipe
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popular__body-block-item">
+                        <img src="images/dist/program.webp" alt="">
+                        <div class="popular__body-block-item-grad"></div>
+                        <span class="popular__body-block-item-hot caption-medium">
+                            Hot
+                        </span>
+                        <div class="popular__body-block-item-wrap">
+                            <span>Very big and long title name with beautiful words</span>
+                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="" class="low-medium btn-yellow">
+                                Explore Recipe
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="popular__body-btn btn-black">
+                    See All
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="daily">
+        <div class="container">
+            <div class="daily__body">
+                <div class="daily__body-text">
+                    <h2 class="h2">
+                        Daily inspiration
+                    </h2>
+                    <p class="desc-regular">
+                        Everyone has their favourite coffee, and that's awesome! But it's not just about one favourite—it could be many favourite flavours! Every new day is distinct from the last, just like every new cup of coffee becomes a fresh journey of delightful discoveries for you.
+                    </p>
+                </div>
+                <div class="daily__body-wrap">
+                    <a href="" class="daily__body-wrap-item">
+                        <div class="daily__body-wrap-item-top">
+                            <img src="images/dist/daily.webp" alt="">
+                            <span class="low-medium">
+                                Lorem ipsum
+                            </span>
+                        </div>
+                        <div class="daily__body-wrap-item-bot">
+                            <span class="h5-medium">Flaming Carajillo spanish coffee</span>
+                            <div class="daily__body-wrap-item-bot-action">
+                                <div>
+                                    <img src="images/dist/eye-open.png" alt="">                                                                                                                                        
+                                    <span class="low-regular">4.6k</span>
+                                </div>
+                                <div>
+                                    <img src="images/dist/thumb-up.svg" alt="">                                   
+                                    <span class="low-regular">46</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="daily__body-wrap-item">
+                        <div class="daily__body-wrap-item-top">
+                            <img src="images/dist/daily.webp" alt="">
+                            <span class="low-medium">
+                                Lorem ipsum
+                            </span>
+                        </div>
+                        <div class="daily__body-wrap-item-bot">
+                            <span class="h5-medium">Flaming Carajillo spanish coffee</span>
+                            <div class="daily__body-wrap-item-bot-action">
+                                <div>
+                                    <img src="images/dist/eye-open.png" alt="">                                                                                                                                        
+                                    <span class="low-regular">4.6k</span>
+                                </div>
+                                <div>
+                                    <img src="images/dist/thumb-up.svg" alt="">                                   
+                                    <span class="low-regular">46</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="daily__body-wrap-item">
+                        <div class="daily__body-wrap-item-top">
+                            <img src="images/dist/daily.webp" alt="">
+                            <span class="low-medium">
+                                Lorem ipsum
+                            </span>
+                        </div>
+                        <div class="daily__body-wrap-item-bot">
+                            <span class="h5-medium">Flaming Carajillo spanish coffee</span>
+                            <div class="daily__body-wrap-item-bot-action">
+                                <div>
+                                    <img src="images/dist/eye-open.png" alt="">                                                                                                                                        
+                                    <span class="low-regular">4.6k</span>
+                                </div>
+                                <div>
+                                    <img src="images/dist/thumb-up.svg" alt="">                                   
+                                    <span class="low-regular">46</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="daily__body-wrap-item">
+                        <div class="daily__body-wrap-item-top">
+                            <img src="images/dist/daily.webp" alt="">
+                            <span class="low-medium">
+                                Lorem ipsum
+                            </span>
+                        </div>
+                        <div class="daily__body-wrap-item-bot">
+                            <span class="h5-medium">Flaming Carajillo spanish coffee</span>
+                            <div class="daily__body-wrap-item-bot-action">
+                                <div>
+                                    <img src="images/dist/eye-open.png" alt="">                                                                                                                                        
+                                    <span class="low-regular">4.6k</span>
+                                </div>
+                                <div>
+                                    <img src="images/dist/thumb-up.svg" alt="">                                   
+                                    <span class="low-regular">46</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <button class="daily__body-btn btn-black">
+                    See All
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__body-top">
+                <div class="footer__body-top-text">
+                    <h5 class="h5-regular">Brew the coffee in any preferred way</h5>
+                    <p class="desc-regular">Use the equipment you have</p>
+                </div>
+                <div class="footer__body-top-items">
+                    <a href="" class="footer__body-top-items-item">
+                        <div class="circle">
+                            <img src="images/dist/footer/1.svg" alt="">
+                        </div>
+                        <span>Сoffee maker</span>
+                    </a>
+                    <a href="" class="footer__body-top-items-item">
+                        <div class="circle">
+                            <img src="images/dist/footer/2.svg" alt="">
+                        </div>
+                        <span>Chemex</span>
+                    </a>
+                    <a href="" class="footer__body-top-items-item">
+                        <div class="circle">
+                            <img src="images/dist/footer/3.svg" alt="">
+                        </div>
+                        <span>Coffee Press (cafetiere)</span>
+                    </a>
+                    <a href="" class="footer__body-top-items-item">
+                        <div class="circle">
+                            <img src="images/dist/footer/4.svg" alt="">
+                        </div>
+                        <span>AeroPress</span>
+                    </a>
+                    <a href="" class="footer__body-top-items-item">
+                        <div class="circle">
+                            <img src="images/dist/footer/5.svg" alt="">
+                        </div>
+                        <span>Moka pot</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__body-main">
+                <div class="footer__body-main-start">
+                    <div class="footer__body-main-start-left">
+                        <div class="footer__body-main-start-left-logo">
+                            <a href="">
+                                <img src="images/dist/logo.svg" alt="">
+                            </a>
+                            <div class="footer__body-main-start-left-logo-action">
+                                <p class="desc-regular">Stay updated on all the latest KusCoffee products, events & community news</p>
+                                <form action="" class="footer__body-main-start-left-logo-action-form">
+                                    <input class="low-regular" placeholder="Your E-mail" type="text">
+                                    <button class="btn-yellow">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="footer__body-main-start-left-social">
+                            <div>
+                                <a href="">
+                                    <img src="images/dist/social/1.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="images/dist/social/2.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="images/dist/social/3.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="images/dist/social/4.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="images/dist/social/5.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="footer__body-main-start-menu">
+                        <h4 class="h4-regular">
+                            Menu
+                        </h4>
+                        <ul>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Daily Inspiration
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Recipes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Ingredients
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Club
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__body-main-start-menu">
+                        <h4 class="h4-regular">
+                            Information
+                        </h4>
+                        <ul>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Terms of Service
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Human Rights Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Whistleblower Procedure
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Modern Slavery Statement
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__body-main-start-menu">
+                        <h4 class="h4-regular">
+                            Shop
+                        </h4>
+                        <ul>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Account
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Setting
+                                </a>
+                            </li>
+                            <li>
+                                <a class="low-regular links-white" href="">
+                                    Wish list
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__body-main-end">
+                    <p class="low-regular">Develop by <a class="links-yellow" href="https://www.cosmo-design.com/">Cosmo Design</a></p>
+                    <p class="low-regular">Copyright © 2024 Kuscoffee Limited. All rights reserved.</p>
+                    <button class="low-medium top-btn links-yellow">
+                        Back to top
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 14L11.9992 9.42L7 14" stroke="#F9C000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
+
+
