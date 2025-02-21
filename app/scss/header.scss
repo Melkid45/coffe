@@ -3,9 +3,11 @@
 }
 
 .main {
-    padding: 85px 0 335px 16px;
     position: relative;
-    &__text {
+    &__body{
+        padding: 85px 0 335px 0px;
+    }
+    .main__text {
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -58,7 +60,7 @@
         }
     }
 
-    &__img {
+    .main__img {
         height: 714px;
         width: 858px;
         position: absolute;
@@ -66,7 +68,7 @@
         right: 0;
     }
 
-    &__coffee {
+    .main__coffee {
         position: absolute;
         bottom: 94px;
         left: 16px;
@@ -83,7 +85,7 @@
         left: 0;
         bottom: -110px;
     }
-    &__stroke-body:nth-child(1) {
+    .main__stroke-body:nth-child(1) {
         width: 1519px;
         height: 80px;
         background: var(--yellow-dark);
@@ -93,7 +95,7 @@
         top: 50px;
     }
 
-    &__stroke-body:nth-child(2) {
+    .main__stroke-body:nth-child(2) {
         width: 1490px;
         height: 80px;
         background: var(--yellow);
@@ -106,14 +108,14 @@
         }
     }
 
-    &__stroke-body {
+    .main__stroke-body {
         display: flex;
         align-items: center;
         overflow: hidden;
 
     }
 
-    &__stroke-body-wrap {
+    .main__stroke-body-wrap {
         display: flex;
         align-items: center;
         gap: 38.43px;
@@ -222,7 +224,7 @@
                         border-radius: 24px;
                         background: var(--white);
                         position: absolute;
-                        top: 50px;
+                        top: 21px;
                         z-index: 100;
                         padding: 0 8px;
                         transition: all 0.5s ease;

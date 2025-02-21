@@ -6,7 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../scss/style.min.css">
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">    
+<link rel="stylesheet" href="../scss/style.min.css">
     <title>Kus Coffee</title>
 </head>
 <body>
@@ -15,9 +18,10 @@
             <div class="container">
                 <div class="header__body">
                     <a href="/" class="header__body-logo">
-                        <img src="../images/dist/logo.svg" alt="">
+                        <img class="first" src="../images/dist/logo.svg" alt="">
+                        <img class="second" src="../images/dist/black__logo.svg" alt="">
                     </a>
-                    <nav class="header__body-menu">
+                    <nav class="header__body-menu desk">
                         <ul>
                             <li class="low-medium active links-white">
                                 <a href="">
@@ -100,7 +104,7 @@
                         </ul>
                     </nav>
                     <div class="header__body-action">
-                        <a href="">
+                        <a class="desk" href="">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M3.80625 6.20641C4.70639 5.30655 5.92707 4.80104 7.19985 4.80104C8.47264 4.80104 9.69332 5.30655 10.5935 6.20641L11.9999 7.61161L13.4063 6.20641C13.849 5.74796 14.3787 5.38229 14.9643 5.13072C15.5499 4.87916 16.1798 4.74675 16.8171 4.74121C17.4545 4.73567 18.0865 4.85712 18.6764 5.09847C19.2663 5.33982 19.8023 5.69623 20.2529 6.14691C20.7036 6.5976 21.06 7.13353 21.3014 7.72343C21.5427 8.31333 21.6642 8.9454 21.6587 9.58274C21.6531 10.2201 21.5207 10.8499 21.2691 11.4356C21.0176 12.0212 20.6519 12.5508 20.1934 12.9936L11.9999 21.1884L3.80625 12.9936C2.90639 12.0935 2.40088 10.8728 2.40088 9.60001C2.40088 8.32722 2.90639 7.10654 3.80625 6.20641V6.20641Z"
@@ -108,7 +112,7 @@
                             </svg>
                             <div class="circle">0</div>
                         </a>
-                        <a href="">
+                        <a class="desk" href="">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M2.3999 20.5124C2.3999 16.7369 5.55419 13.6762 11.9999 13.6762C18.4456 13.6762 21.5999 16.7369 21.5999 20.5124C21.5999 21.1131 21.1617 21.6 20.6211 21.6H3.37873C2.83814 21.6 2.3999 21.1131 2.3999 20.5124Z"
@@ -118,7 +122,7 @@
                                     stroke="white" stroke-width="1.5" />
                             </svg>
                         </a>
-                        <button class="btn-black">
+                        <button class="btn-black find">
                             <span class="low-medium">Find Recipe</span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -127,28 +131,131 @@
                             </svg>
                         </button>
                     </div>
+                    <label class="hamburger mob">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 32 32">
+                            <path class="line line-top-bottom"
+                                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                            </path>
+                            <path class="line" d="M7 16 27 16"></path>
+                        </svg>
+                    </label>
                 </div>
+            </div>
+            <div class="header__menu mob">
+                <nav class="header__body-menu">
+                    <ul>
+                        <li class="low-medium active links-white">
+                            <a href="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="low-medium links-white">
+                            <a href="">
+                                Daily Inspiration
+                            </a>
+                        </li>
+                        <li class="low-medium menu-recipes links-white">
+                            <span>
+                                Recipes
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8.00081 10.58L13 6" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <ul class="menu__wrapper">
+                                <li>
+                                    <a class="btn-black" href="">
+                                        Spices
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-black" href="">
+                                        Fruits
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-black" href="">
+                                        Syrups
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-black" href="">
+                                        Latte
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-black" href="">
+                                        Unusual
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-black" href="">
+                                        Gorky
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-black" href="">
+                                        Sweet
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-black" href="">
+                                        Spicy
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="low-medium links-white">
+                            <span>
+                                Ingredients
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8.00081 10.58L13 6" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="low-medium links-white">
+                            <a href="">
+                                Club
+                            </a>
+                        </li>
+                        <li class="low-medium links-white">
+                            <a href="">
+                                Shop
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main class="main">
-            <div class="main__text">
-                <h1 class="h1">
-                    Discover <br>
-                    a world of <br> coffee delights
-                </h1>
-                <p class="desc-regular">
-                    Embark on a journey through our vast collection of coffee recipes, exotic blends, and expert tips
-                    designed to elevate your home barista skills and experience the pure delight of coffee mastery.
-                </p>
-                <div class="main__text-search">
-                    <input class="low-regular" placeholder="Find a recipe by ingredient ..." type="text">
-                    <button class="btn-yellow">
-                        Search
-                    </button>
+            <div class="container">
+                <div class="main__body">
+                    <div class="main__text">
+                        <h1 class="h1">
+                            Discover <br>
+                            a world of <br> coffee delights
+                        </h1>
+                        <p class="desc-regular">
+                            Embark on a journey through our vast collection of coffee recipes, exotic blends, and expert
+                            tips
+                            designed to elevate your home barista skills and experience the pure delight of coffee mastery.
+                        </p>
+                        <div class="main__text-search">
+                            <input class="low-regular" placeholder="Find a recipe by ingredient ..." type="text">
+                            <button class="btn-yellow">
+                                Search
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <img src="../images/dist/main__img.webp" alt="" class="main__img">
-            <img src="../images/dist/main__coffee.webp" alt="" class="main__coffee">
+            <img src="../images/dist/main__img.webp" alt="" class="main__img desk">
+            <img src="../images/dist/main__mob.webp" alt="" class="main__img mob">
+            <img src="../images/dist/main__coffee.webp" alt="" class="main__coffee desk">
             <div class="main__stroke">
                 <div class="main__stroke-body">
                     <div class="main__stroke-body-wrap">
@@ -230,18 +337,18 @@
                     </div>
                     <div class="attribute__body-wrap-item">
                         <div class="circle">
-                            <img src="../images/dist/attr/1.svg" alt="">
+                            <img src="../images/dist/attr/2.svg" alt="">
     
                         </div>
                         <span class="h5-medium">Cooking at home</span>
                         <p class="desc-regular">Suitable for any household equipment</p>
                     </div>
                 </div>
-                <img class="attribute__body-img" src="../images/dist/attr.webp" alt="">
+                <img class="attribute__body-img desk" src="../images/dist/attr.webp" alt="">
                 <div class="attribute__body-wrap">
                     <div class="attribute__body-wrap-item">
                         <div class="circle">
-                            <img src="../images/dist/attr/1.svg" alt="">
+                            <img src="../images/dist/attr/3.svg" alt="">
     
                         </div>
                         <span class="h5-medium">Real pics and video</span>
@@ -249,7 +356,7 @@
                     </div>
                     <div class="attribute__body-wrap-item">
                         <div class="circle">
-                            <img src="../images/dist/attr/1.svg" alt="">
+                            <img src="../images/dist/attr/4.svg" alt="">
     
                         </div>
                         <span class="h5-medium">Quality guaranteed</span>
@@ -269,7 +376,7 @@
                     Every new day is distinct from the last, just like every new cup of coffee becomes a fresh journey of
                     delightful discoveries for you.
                 </p>
-                <div class="program__body-wrap">
+                <div class="program__body-wrap desk">
                     <a href="" class="program__body-wrap-item">
                         <div class="program__body-wrap-item-top">
                             <img src="../images/dist/program.webp" alt="">
@@ -416,7 +523,7 @@
                             <button class="program__body-wrap-item-top-like">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                    <path
                                         d="M3.80625 6.20635C4.70639 5.30649 5.92707 4.80097 7.19985 4.80097C8.47264 4.80097 9.69332 5.30649 10.5935 6.20635L11.9999 7.61155L13.4063 6.20635C13.849 5.7479 14.3787 5.38223 14.9643 5.13066C15.5499 4.8791 16.1798 4.74669 16.8171 4.74115C17.4545 4.73561 18.0865 4.85706 18.6764 5.09841C19.2663 5.33975 19.8023 5.69617 20.2529 6.14685C20.7036 6.59754 21.06 7.13347 21.3014 7.72337C21.5427 8.31327 21.6642 8.94533 21.6587 9.58268C21.6531 10.22 21.5207 10.8499 21.2691 11.4355C21.0176 12.0211 20.6519 12.5508 20.1934 12.9935L11.9999 21.1883L3.80625 12.9935C2.90639 12.0934 2.40088 10.8727 2.40088 9.59995C2.40088 8.32716 2.90639 7.10648 3.80625 6.20635V6.20635Z"
                                         stroke="#878787" stroke-width="1.5" stroke-linejoin="round" />
                                 </svg>
@@ -451,13 +558,201 @@
                         </div>
                     </a>
                 </div>
+    
+            </div>
+        </div>
+        <div id="program" class="splide mob" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <a href="" class="program__body-wrap-item splide__slide">
+                        <div class="program__body-wrap-item-top">
+                            <img src="../images/dist/program.webp" alt="">
+                            <div class="program__body-wrap-item-top-attr">
+                                <span class="caption-medium">Hot</span>
+                                <span class="caption-medium">Vegan</span>
+                                <span class="caption-medium">Alcohol</span>
+                            </div>
+                            <button class="program__body-wrap-item-top-like">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.80625 6.20635C4.70639 5.30649 5.92707 4.80097 7.19985 4.80097C8.47264 4.80097 9.69332 5.30649 10.5935 6.20635L11.9999 7.61155L13.4063 6.20635C13.849 5.7479 14.3787 5.38223 14.9643 5.13066C15.5499 4.8791 16.1798 4.74669 16.8171 4.74115C17.4545 4.73561 18.0865 4.85706 18.6764 5.09841C19.2663 5.33975 19.8023 5.69617 20.2529 6.14685C20.7036 6.59754 21.06 7.13347 21.3014 7.72337C21.5427 8.31327 21.6642 8.94533 21.6587 9.58268C21.6531 10.22 21.5207 10.8499 21.2691 11.4355C21.0176 12.0211 20.6519 12.5508 20.1934 12.9935L11.9999 21.1883L3.80625 12.9935C2.90639 12.0934 2.40088 10.8727 2.40088 9.59995C2.40088 8.32716 2.90639 7.10648 3.80625 6.20635V6.20635Z"
+                                        stroke="#878787" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="program__body-wrap-item-bot">
+                            <div class="program__body-wrap-item-bot-text">
+                                <span class="desc-regular">Category name</span>
+                                <p>Very big and long title name with beautiful words</p>
+                            </div>
+                            <div class="program__body-wrap-item-bot-action">
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                            stroke="#14463A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">46</span>
+                                </div>
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4951 2.71381C11.7017 2.29527 12.2985 2.29527 12.5051 2.71381L15.1791 8.13194C15.2611 8.29814 15.4196 8.41334 15.6031 8.43999L21.5823 9.30883C22.0442 9.37595 22.2286 9.94357 21.8944 10.2694L17.5678 14.4868C17.4351 14.6162 17.3745 14.8026 17.4058 14.9852L18.4272 20.9403C18.5061 21.4004 18.0233 21.7512 17.6101 21.534L12.2621 18.7224C12.0981 18.6361 11.9021 18.6361 11.738 18.7224L6.39002 21.534C5.97689 21.7512 5.49404 21.4004 5.57294 20.9403L6.59432 14.9852C6.62565 14.8026 6.56509 14.6162 6.43236 14.4868L2.10573 10.2694C1.7715 9.94357 1.95594 9.37595 2.41783 9.30883L8.39708 8.43999C8.5805 8.41334 8.73906 8.29814 8.82109 8.13194L11.4951 2.71381Z"
+                                            fill="#F9C000" stroke="#F9C000" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="program__body-wrap-item splide__slide">
+                        <div class="program__body-wrap-item-top">
+                            <img src="../images/dist/program.webp" alt="">
+                            <div class="program__body-wrap-item-top-attr">
+                                <span class="caption-medium">Hot</span>
+                                <span class="caption-medium">Vegan</span>
+                                <span class="caption-medium">Alcohol</span>
+                            </div>
+                            <button class="program__body-wrap-item-top-like">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.80625 6.20635C4.70639 5.30649 5.92707 4.80097 7.19985 4.80097C8.47264 4.80097 9.69332 5.30649 10.5935 6.20635L11.9999 7.61155L13.4063 6.20635C13.849 5.7479 14.3787 5.38223 14.9643 5.13066C15.5499 4.8791 16.1798 4.74669 16.8171 4.74115C17.4545 4.73561 18.0865 4.85706 18.6764 5.09841C19.2663 5.33975 19.8023 5.69617 20.2529 6.14685C20.7036 6.59754 21.06 7.13347 21.3014 7.72337C21.5427 8.31327 21.6642 8.94533 21.6587 9.58268C21.6531 10.22 21.5207 10.8499 21.2691 11.4355C21.0176 12.0211 20.6519 12.5508 20.1934 12.9935L11.9999 21.1883L3.80625 12.9935C2.90639 12.0934 2.40088 10.8727 2.40088 9.59995C2.40088 8.32716 2.90639 7.10648 3.80625 6.20635V6.20635Z"
+                                        stroke="#878787" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="program__body-wrap-item-bot">
+                            <div class="program__body-wrap-item-bot-text">
+                                <span class="desc-regular">Category name</span>
+                                <p>Very big and long title name with beautiful words</p>
+                            </div>
+                            <div class="program__body-wrap-item-bot-action">
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                            stroke="#14463A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">46</span>
+                                </div>
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4951 2.71381C11.7017 2.29527 12.2985 2.29527 12.5051 2.71381L15.1791 8.13194C15.2611 8.29814 15.4196 8.41334 15.6031 8.43999L21.5823 9.30883C22.0442 9.37595 22.2286 9.94357 21.8944 10.2694L17.5678 14.4868C17.4351 14.6162 17.3745 14.8026 17.4058 14.9852L18.4272 20.9403C18.5061 21.4004 18.0233 21.7512 17.6101 21.534L12.2621 18.7224C12.0981 18.6361 11.9021 18.6361 11.738 18.7224L6.39002 21.534C5.97689 21.7512 5.49404 21.4004 5.57294 20.9403L6.59432 14.9852C6.62565 14.8026 6.56509 14.6162 6.43236 14.4868L2.10573 10.2694C1.7715 9.94357 1.95594 9.37595 2.41783 9.30883L8.39708 8.43999C8.5805 8.41334 8.73906 8.29814 8.82109 8.13194L11.4951 2.71381Z"
+                                            fill="#F9C000" stroke="#F9C000" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="program__body-wrap-item splide__slide">
+                        <div class="program__body-wrap-item-top">
+                            <img src="../images/dist/program.webp" alt="">
+                            <div class="program__body-wrap-item-top-attr">
+                                <span class="caption-medium">Hot</span>
+                                <span class="caption-medium">Vegan</span>
+                                <span class="caption-medium">Alcohol</span>
+                            </div>
+                            <button class="program__body-wrap-item-top-like">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.80625 6.20635C4.70639 5.30649 5.92707 4.80097 7.19985 4.80097C8.47264 4.80097 9.69332 5.30649 10.5935 6.20635L11.9999 7.61155L13.4063 6.20635C13.849 5.7479 14.3787 5.38223 14.9643 5.13066C15.5499 4.8791 16.1798 4.74669 16.8171 4.74115C17.4545 4.73561 18.0865 4.85706 18.6764 5.09841C19.2663 5.33975 19.8023 5.69617 20.2529 6.14685C20.7036 6.59754 21.06 7.13347 21.3014 7.72337C21.5427 8.31327 21.6642 8.94533 21.6587 9.58268C21.6531 10.22 21.5207 10.8499 21.2691 11.4355C21.0176 12.0211 20.6519 12.5508 20.1934 12.9935L11.9999 21.1883L3.80625 12.9935C2.90639 12.0934 2.40088 10.8727 2.40088 9.59995C2.40088 8.32716 2.90639 7.10648 3.80625 6.20635V6.20635Z"
+                                        stroke="#878787" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="program__body-wrap-item-bot">
+                            <div class="program__body-wrap-item-bot-text">
+                                <span class="desc-regular">Category name</span>
+                                <p>Very big and long title name with beautiful words</p>
+                            </div>
+                            <div class="program__body-wrap-item-bot-action">
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                            stroke="#14463A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">46</span>
+                                </div>
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4951 2.71381C11.7017 2.29527 12.2985 2.29527 12.5051 2.71381L15.1791 8.13194C15.2611 8.29814 15.4196 8.41334 15.6031 8.43999L21.5823 9.30883C22.0442 9.37595 22.2286 9.94357 21.8944 10.2694L17.5678 14.4868C17.4351 14.6162 17.3745 14.8026 17.4058 14.9852L18.4272 20.9403C18.5061 21.4004 18.0233 21.7512 17.6101 21.534L12.2621 18.7224C12.0981 18.6361 11.9021 18.6361 11.738 18.7224L6.39002 21.534C5.97689 21.7512 5.49404 21.4004 5.57294 20.9403L6.59432 14.9852C6.62565 14.8026 6.56509 14.6162 6.43236 14.4868L2.10573 10.2694C1.7715 9.94357 1.95594 9.37595 2.41783 9.30883L8.39708 8.43999C8.5805 8.41334 8.73906 8.29814 8.82109 8.13194L11.4951 2.71381Z"
+                                            fill="#F9C000" stroke="#F9C000" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="program__body-wrap-item splide__slide">
+                        <div class="program__body-wrap-item-top">
+                            <img src="../images/dist/program.webp" alt="">
+                            <div class="program__body-wrap-item-top-attr">
+                                <span class="caption-medium">Hot</span>
+                                <span class="caption-medium">Vegan</span>
+                                <span class="caption-medium">Alcohol</span>
+                            </div>
+                            <button class="program__body-wrap-item-top-like">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.80625 6.20635C4.70639 5.30649 5.92707 4.80097 7.19985 4.80097C8.47264 4.80097 9.69332 5.30649 10.5935 6.20635L11.9999 7.61155L13.4063 6.20635C13.849 5.7479 14.3787 5.38223 14.9643 5.13066C15.5499 4.8791 16.1798 4.74669 16.8171 4.74115C17.4545 4.73561 18.0865 4.85706 18.6764 5.09841C19.2663 5.33975 19.8023 5.69617 20.2529 6.14685C20.7036 6.59754 21.06 7.13347 21.3014 7.72337C21.5427 8.31327 21.6642 8.94533 21.6587 9.58268C21.6531 10.22 21.5207 10.8499 21.2691 11.4355C21.0176 12.0211 20.6519 12.5508 20.1934 12.9935L11.9999 21.1883L3.80625 12.9935C2.90639 12.0934 2.40088 10.8727 2.40088 9.59995C2.40088 8.32716 2.90639 7.10648 3.80625 6.20635V6.20635Z"
+                                        stroke="#878787" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="program__body-wrap-item-bot">
+                            <div class="program__body-wrap-item-bot-text">
+                                <span class="desc-regular">Category name</span>
+                                <p>Very big and long title name with beautiful words</p>
+                            </div>
+                            <div class="program__body-wrap-item-bot-action">
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                            stroke="#14463A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">46</span>
+                                </div>
+                                <div class="program__body-wrap-item-bot-action-el">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4951 2.71381C11.7017 2.29527 12.2985 2.29527 12.5051 2.71381L15.1791 8.13194C15.2611 8.29814 15.4196 8.41334 15.6031 8.43999L21.5823 9.30883C22.0442 9.37595 22.2286 9.94357 21.8944 10.2694L17.5678 14.4868C17.4351 14.6162 17.3745 14.8026 17.4058 14.9852L18.4272 20.9403C18.5061 21.4004 18.0233 21.7512 17.6101 21.534L12.2621 18.7224C12.0981 18.6361 11.9021 18.6361 11.738 18.7224L6.39002 21.534C5.97689 21.7512 5.49404 21.4004 5.57294 20.9403L6.59432 14.9852C6.62565 14.8026 6.56509 14.6162 6.43236 14.4868L2.10573 10.2694C1.7715 9.94357 1.95594 9.37595 2.41783 9.30883L8.39708 8.43999C8.5805 8.41334 8.73906 8.29814 8.82109 8.13194L11.4951 2.71381Z"
+                                            fill="#F9C000" stroke="#F9C000" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="h4-medium">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </ul>
             </div>
         </div>
     </section>
     <section class="try">
         <div class="container">
             <div class="try__body">
-                <img class="try__body-img" src="../images/dist/try.webp" alt="">
+                <img class="try__body-img desk" src="../images/dist/try.webp" alt="">
+                <img class="try__body-img mob" src="../images/dist/try__mob.webp" alt="">
                 <div class="try__body-text">
                     <h2 class="h2">
                         Try coffee with
@@ -502,46 +797,46 @@
                         <a class="desc-regular btn-black" href="">
                             milk
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             cardamon
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             milk
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             water
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             anise
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             milk
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             cardamon
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             milk
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             water
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             anise
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             milk
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             cardamon
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             milk
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             water
                         </a>
-                        <a class="desc-regular btn-black" href="">
+                        <a class="desc-regular btn-black desk" href="">
                             anise
                         </a>
                     </div>
@@ -674,7 +969,7 @@
                         turmeric to salted caramel and banana syrup.
                     </p>
                 </div>
-                <div class="popular__body-block">
+                <div class="popular__body-block desk">
                     <div class="popular__body-block-item">
                         <img src="../images/dist/program.webp" alt="">
                         <div class="popular__body-block-item-grad"></div>
@@ -683,12 +978,15 @@
                         </span>
                         <div class="popular__body-block-item-wrap">
                             <span>Very big and long title name with beautiful words</span>
-                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. </p>
                             <a href="" class="low-medium btn-yellow">
                                 Explore Recipe
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -700,12 +998,15 @@
                         </span>
                         <div class="popular__body-block-item-wrap">
                             <span>Very big and long title name with beautiful words</span>
-                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. </p>
                             <a href="" class="low-medium btn-yellow">
                                 Explore Recipe
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -717,12 +1018,15 @@
                         </span>
                         <div class="popular__body-block-item-wrap">
                             <span>Very big and long title name with beautiful words</span>
-                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. </p>
                             <a href="" class="low-medium btn-yellow">
                                 Explore Recipe
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -734,14 +1038,107 @@
                         </span>
                         <div class="popular__body-block-item-wrap">
                             <span>Very big and long title name with beautiful words</span>
-                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. </p>
                             <a href="" class="low-medium btn-yellow">
                                 Explore Recipe
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </a>
                         </div>
+                    </div>
+                </div>
+                <div class="splide mob" id="popular" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <div class="popular__body-block-item splide__slide">
+                                <img src="../images/dist/program.webp" alt="">
+                                <div class="popular__body-block-item-grad"></div>
+                                <span class="popular__body-block-item-hot caption-medium">
+                                    Hot
+                                </span>
+                                <div class="popular__body-block-item-wrap">
+                                    <span>Very big and long title name with beautiful words</span>
+                                    <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <a href="" class="low-medium btn-yellow">
+                                        Explore Recipe
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="popular__body-block-item splide__slide">
+                                <img src="../images/dist/program.webp" alt="">
+                                <div class="popular__body-block-item-grad"></div>
+                                <span class="popular__body-block-item-hot caption-medium">
+                                    Hot
+                                </span>
+                                <div class="popular__body-block-item-wrap">
+                                    <span>Very big and long title name with beautiful words</span>
+                                    <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <a href="" class="low-medium btn-yellow">
+                                        Explore Recipe
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="popular__body-block-item splide__slide">
+                                <img src="../images/dist/program.webp" alt="">
+                                <div class="popular__body-block-item-grad"></div>
+                                <span class="popular__body-block-item-hot caption-medium">
+                                    Hot
+                                </span>
+                                <div class="popular__body-block-item-wrap">
+                                    <span>Very big and long title name with beautiful words</span>
+                                    <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <a href="" class="low-medium btn-yellow">
+                                        Explore Recipe
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="popular__body-block-item splide__slide">
+                                <img src="../images/dist/program.webp" alt="">
+                                <div class="popular__body-block-item-grad"></div>
+                                <span class="popular__body-block-item-hot caption-medium">
+                                    Hot
+                                </span>
+                                <div class="popular__body-block-item-wrap">
+                                    <span>Very big and long title name with beautiful words</span>
+                                    <p class="low-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <a href="" class="low-medium btn-yellow">
+                                        Explore Recipe
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 17L14.58 11.9992L10 7" stroke="#1D1D1B" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </ul>
                     </div>
                 </div>
                 <button class="popular__body-btn btn-black">
@@ -758,10 +1155,12 @@
                         Daily inspiration
                     </h2>
                     <p class="desc-regular">
-                        Everyone has their favourite coffee, and that's awesome! But it's not just about one favourite—it could be many favourite flavours! Every new day is distinct from the last, just like every new cup of coffee becomes a fresh journey of delightful discoveries for you.
+                        Everyone has their favourite coffee, and that's awesome! But it's not just about one favourite—it
+                        could be many favourite flavours! Every new day is distinct from the last, just like every new cup
+                        of coffee becomes a fresh journey of delightful discoveries for you.
                     </p>
                 </div>
-                <div class="daily__body-wrap">
+                <div class="daily__body-wrap desk">
                     <a href="" class="daily__body-wrap-item">
                         <div class="daily__body-wrap-item-top">
                             <img src="../images/dist/daily.webp" alt="">
@@ -773,11 +1172,11 @@
                             <span class="h5-medium">Flaming Carajillo spanish coffee</span>
                             <div class="daily__body-wrap-item-bot-action">
                                 <div>
-                                    <img src="../images/dist/eye-open.png" alt="">                                                                                                                                        
+                                    <img src="../images/dist/eye-open.png" alt="">
                                     <span class="low-regular">4.6k</span>
                                 </div>
                                 <div>
-                                    <img src="../images/dist/thumb-up.svg" alt="">                                   
+                                    <img src="../images/dist/thumb-up.svg" alt="">
                                     <span class="low-regular">46</span>
                                 </div>
                             </div>
@@ -794,11 +1193,11 @@
                             <span class="h5-medium">Flaming Carajillo spanish coffee</span>
                             <div class="daily__body-wrap-item-bot-action">
                                 <div>
-                                    <img src="../images/dist/eye-open.png" alt="">                                                                                                                                        
+                                    <img src="../images/dist/eye-open.png" alt="">
                                     <span class="low-regular">4.6k</span>
                                 </div>
                                 <div>
-                                    <img src="../images/dist/thumb-up.svg" alt="">                                   
+                                    <img src="../images/dist/thumb-up.svg" alt="">
                                     <span class="low-regular">46</span>
                                 </div>
                             </div>
@@ -815,11 +1214,11 @@
                             <span class="h5-medium">Flaming Carajillo spanish coffee</span>
                             <div class="daily__body-wrap-item-bot-action">
                                 <div>
-                                    <img src="../images/dist/eye-open.png" alt="">                                                                                                                                        
+                                    <img src="../images/dist/eye-open.png" alt="">
                                     <span class="low-regular">4.6k</span>
                                 </div>
                                 <div>
-                                    <img src="../images/dist/thumb-up.svg" alt="">                                   
+                                    <img src="../images/dist/thumb-up.svg" alt="">
                                     <span class="low-regular">46</span>
                                 </div>
                             </div>
@@ -836,16 +1235,106 @@
                             <span class="h5-medium">Flaming Carajillo spanish coffee</span>
                             <div class="daily__body-wrap-item-bot-action">
                                 <div>
-                                    <img src="../images/dist/eye-open.png" alt="">                                                                                                                                        
+                                    <img src="../images/dist/eye-open.png" alt="">
                                     <span class="low-regular">4.6k</span>
                                 </div>
                                 <div>
-                                    <img src="../images/dist/thumb-up.svg" alt="">                                   
+                                    <img src="../images/dist/thumb-up.svg" alt="">
                                     <span class="low-regular">46</span>
                                 </div>
                             </div>
                         </div>
                     </a>
+                </div>
+                <div class="splide mob" id="daily" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <a href="" class="daily__body-wrap-item splide__slide">
+                                <div class="daily__body-wrap-item-top">
+                                    <img src="../images/dist/daily.webp" alt="">
+                                    <span class="low-medium">
+                                        Lorem ipsum
+                                    </span>
+                                </div>
+                                <div class="daily__body-wrap-item-bot">
+                                    <span class="h5-medium">Flaming Carajillo spanish coffee</span>
+                                    <div class="daily__body-wrap-item-bot-action">
+                                        <div>
+                                            <img src="../images/dist/eye-open.png" alt="">
+                                            <span class="low-regular">4.6k</span>
+                                        </div>
+                                        <div>
+                                            <img src="../images/dist/thumb-up.svg" alt="">
+                                            <span class="low-regular">46</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="daily__body-wrap-item splide__slide">
+                                <div class="daily__body-wrap-item-top">
+                                    <img src="../images/dist/daily.webp" alt="">
+                                    <span class="low-medium">
+                                        Lorem ipsum
+                                    </span>
+                                </div>
+                                <div class="daily__body-wrap-item-bot">
+                                    <span class="h5-medium">Flaming Carajillo spanish coffee</span>
+                                    <div class="daily__body-wrap-item-bot-action">
+                                        <div>
+                                            <img src="../images/dist/eye-open.png" alt="">
+                                            <span class="low-regular">4.6k</span>
+                                        </div>
+                                        <div>
+                                            <img src="../images/dist/thumb-up.svg" alt="">
+                                            <span class="low-regular">46</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="daily__body-wrap-item splide__slide">
+                                <div class="daily__body-wrap-item-top">
+                                    <img src="../images/dist/daily.webp" alt="">
+                                    <span class="low-medium">
+                                        Lorem ipsum
+                                    </span>
+                                </div>
+                                <div class="daily__body-wrap-item-bot">
+                                    <span class="h5-medium">Flaming Carajillo spanish coffee</span>
+                                    <div class="daily__body-wrap-item-bot-action">
+                                        <div>
+                                            <img src="../images/dist/eye-open.png" alt="">
+                                            <span class="low-regular">4.6k</span>
+                                        </div>
+                                        <div>
+                                            <img src="../images/dist/thumb-up.svg" alt="">
+                                            <span class="low-regular">46</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="daily__body-wrap-item splide__slide">
+                                <div class="daily__body-wrap-item-top">
+                                    <img src="../images/dist/daily.webp" alt="">
+                                    <span class="low-medium">
+                                        Lorem ipsum
+                                    </span>
+                                </div>
+                                <div class="daily__body-wrap-item-bot">
+                                    <span class="h5-medium">Flaming Carajillo spanish coffee</span>
+                                    <div class="daily__body-wrap-item-bot-action">
+                                        <div>
+                                            <img src="../images/dist/eye-open.png" alt="">
+                                            <span class="low-regular">4.6k</span>
+                                        </div>
+                                        <div>
+                                            <img src="../images/dist/thumb-up.svg" alt="">
+                                            <span class="low-regular">46</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </ul>
+                    </div>
                 </div>
                 <button class="daily__body-btn btn-black">
                     See All
@@ -861,36 +1350,36 @@
                     <p class="desc-regular">Use the equipment you have</p>
                 </div>
                 <div class="footer__body-top-items">
-                    <a href="" class="footer__body-top-items-item">
+                    <div class="footer__body-top-items-item">
                         <div class="circle">
                             <img src="../images/dist/footer/1.svg" alt="">
                         </div>
                         <span>Сoffee maker</span>
-                    </a>
-                    <a href="" class="footer__body-top-items-item">
+                    </div>
+                    <div class="footer__body-top-items-item">
                         <div class="circle">
                             <img src="../images/dist/footer/2.svg" alt="">
                         </div>
                         <span>Chemex</span>
-                    </a>
-                    <a href="" class="footer__body-top-items-item">
+                    </div>
+                    <div class="footer__body-top-items-item">
                         <div class="circle">
                             <img src="../images/dist/footer/3.svg" alt="">
                         </div>
                         <span>Coffee Press (cafetiere)</span>
-                    </a>
-                    <a href="" class="footer__body-top-items-item">
+                    </div>
+                    <div class="footer__body-top-items-item">
                         <div class="circle">
                             <img src="../images/dist/footer/4.svg" alt="">
                         </div>
                         <span>AeroPress</span>
-                    </a>
-                    <a href="" class="footer__body-top-items-item">
+                    </div>
+                    <div class="footer__body-top-items-item">
                         <div class="circle">
                             <img src="../images/dist/footer/5.svg" alt="">
                         </div>
                         <span>Moka pot</span>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div class="footer__body-main">
@@ -1035,6 +1524,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
     <script src="../js/main.min.js"></script>
 </body>
 </html>
