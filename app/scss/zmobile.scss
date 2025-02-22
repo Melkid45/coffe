@@ -439,8 +439,8 @@
 
             .hamburger svg {
                 /* The size of the SVG defines the overall size */
-                height: 40rem;
-                width: 40rem;
+                height: 32rem;
+                width: 32rem;
                 /* Define the transition for transforming the SVG */
                 transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
             }
@@ -450,7 +450,7 @@
                 stroke: white;
                 stroke-linecap: round;
                 stroke-linejoin: round;
-                stroke-width: 3;
+                stroke-width: 1;
                 /* Define the transition for transforming the Stroke */
                 transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
                 stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1132,17 +1132,21 @@
             .splide__pagination{
                 bottom: -2em;
                 .splide__pagination__page{
-                    width: 8rem;
-                    height: 8rem;
-                    min-width: 8rem;
-                    min-height: 8rem;
+                    width: 4rem;
+                    height: 4rem;
+                    min-width: 4rem;
+                    min-height: 4rem;
                     background: var(--green-dark);
                     margin: 8rem;
                     opacity: 1;
-                    
+                    transition: all 0.3s ease;
                 }
                 .splide__pagination__page.is-active{
                     background: var(--yellow) !important;
+                    scale: 3;
+                }
+                .splide__pagination__page.medium{
+                    scale: 2;
                 }
             }
         }
@@ -1454,17 +1458,21 @@
                 .splide__pagination{
                     bottom: -2em;
                     .splide__pagination__page{
-                        width: 8rem;
-                        height: 8rem;
-                        min-width: 8rem;
-                        min-height: 8rem;
+                        width: 4rem;
+                        height: 4rem;
+                        min-width: 4rem;
+                        min-height: 4rem;
                         background: var(--green-dark);
                         margin: 8rem;
                         opacity: 1;
-                        
+                        transition: all 0.3s ease;
                     }
                     .splide__pagination__page.is-active{
                         background: var(--yellow) !important;
+                        scale: 3;
+                    }
+                    .splide__pagination__page.medium{
+                        scale: 2;
                     }
                 }
             }
@@ -1521,7 +1529,7 @@
 
                 &-item {
                     width: 334rem !important;
-                    height: 290rem !important;
+                    height: 275rem !important;
                     background: var(--white);
                     border-radius: 24rem;
                     overflow: hidden;
@@ -1531,7 +1539,7 @@
                     margin-right: 8rem !important;
                     &-top {
                         width: 100%;
-                        height: 215rem;
+                        height: 200rem;
                         position: relative;
                         padding: 12rem;
 
@@ -1591,17 +1599,21 @@
                 .splide__pagination{
                     bottom: -2em;
                     .splide__pagination__page{
-                        width: 8rem;
-                        height: 8rem;
-                        min-width: 8rem;
-                        min-height: 8rem;
+                        width: 4rem;
+                        height: 4rem;
+                        min-width: 4rem;
+                        min-height: 4rem;
                         background: var(--green-dark);
                         margin: 8rem;
                         opacity: 1;
-                        
+                        transition: all 0.3s ease;
                     }
                     .splide__pagination__page.is-active{
                         background: var(--yellow) !important;
+                        scale: 3;
+                    }
+                    .splide__pagination__page.medium{
+                        scale: 2;
                     }
                 }
             }

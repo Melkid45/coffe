@@ -31,32 +31,84 @@ $('.hamburger').on('click', function(e){
     if ($(this).children('input').prop('checked')){
         $('.header__menu').addClass('active')
         $('.header').addClass('active')
+        $('body').addClass('hidden')
     }else{
         $('.header__menu').removeClass('active')
         $('.header').removeClass('active')
+        $('body').removeClass('hidden')
     }
 })
 
 
-var splide = new Splide( '#program', {
+var splideProg = new Splide( '#program', {
     perPage: 1,
     rewind : true,
     arrows: false
   } );
-  
-  splide.mount();
-
-  var splide = new Splide( '#popular', {
+  splideProg.on( 'mounted', function () {
+    $('#program').children('.splide__pagination').children('li').each(function(e){
+        if ($(this).children('.splide__pagination__page').hasClass('is-active')){
+            $(this).next('li').children('.splide__pagination__page').addClass('medium')
+            $(this).prev('li').children('.splide__pagination__page').addClass('medium')
+        }
+    })
+  } );
+  splideProg.mount();
+  splideProg.on( 'move', function () {
+    $('#program').children('.splide__pagination').children('li').each(function(e){
+        if ($(this).children('.splide__pagination__page').hasClass('is-active')){
+            $(this).next('li').children('.splide__pagination__page').addClass('medium')
+            $(this).prev('li').children('.splide__pagination__page').addClass('medium')
+            $(this).next('li').next('li').children('.splide__pagination__page').removeClass('medium')
+            $(this).prev('li').prev('li').children('.splide__pagination__page').removeClass('medium')
+        }
+    })
+  } );
+  var splidePop = new Splide( '#popular', {
     perPage: 1,
     rewind : true,
     arrows: false
   } );
-  
-  splide.mount();
-  var splide = new Splide( '#daily', {
+  splidePop.on( 'mounted', function () {
+    $('#popular').children('.splide__pagination').children('li').each(function(e){
+        if ($(this).children('.splide__pagination__page').hasClass('is-active')){
+            $(this).next('li').children('.splide__pagination__page').addClass('medium')
+            $(this).prev('li').children('.splide__pagination__page').addClass('medium')
+        }
+    })
+  } );
+  splidePop.mount();
+  splidePop.on( 'move', function () {
+    $('#popular').children('.splide__pagination').children('li').each(function(e){
+        if ($(this).children('.splide__pagination__page').hasClass('is-active')){
+            $(this).next('li').children('.splide__pagination__page').addClass('medium')
+            $(this).prev('li').children('.splide__pagination__page').addClass('medium')
+            $(this).next('li').next('li').children('.splide__pagination__page').removeClass('medium')
+            $(this).prev('li').prev('li').children('.splide__pagination__page').removeClass('medium')
+        }
+    })
+  } );
+  var splideDay = new Splide( '#daily', {
     perPage: 1,
     rewind : true,
     arrows: false
   } );
-  
-  splide.mount();
+  splideDay.on( 'mounted', function () {
+    $('#daily').children('.splide__pagination').children('li').each(function(e){
+        if ($(this).children('.splide__pagination__page').hasClass('is-active')){
+            $(this).next('li').children('.splide__pagination__page').addClass('medium')
+            $(this).prev('li').children('.splide__pagination__page').addClass('medium')
+        }
+    })
+  } );
+  splideDay.mount();
+  splideDay.on( 'move', function () {
+    $('#daily').children('.splide__pagination').children('li').each(function(e){
+        if ($(this).children('.splide__pagination__page').hasClass('is-active')){
+            $(this).next('li').children('.splide__pagination__page').addClass('medium')
+            $(this).prev('li').children('.splide__pagination__page').addClass('medium')
+            $(this).next('li').next('li').children('.splide__pagination__page').removeClass('medium')
+            $(this).prev('li').prev('li').children('.splide__pagination__page').removeClass('medium')
+        }
+    })
+  } );
