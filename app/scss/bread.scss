@@ -1,0 +1,43 @@
+.bread{
+    width: 100%;
+    margin-top: 16px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        overflow: hidden;
+        &-top{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            a{
+                color: var(--grey);
+                transition: all 0.3s ease;
+                white-space: nowrap;
+            }
+            a:hover{
+                color: var(--green-dark);
+            }
+            p{
+                color: var(--grey);
+            }
+            span{
+                color: var(--green-dark);
+                white-space: nowrap;
+            }
+        }
+        &-main{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            h1{
+                color: var(--green-dark);
+                text-transform: uppercase;
+            }
+            p{
+                color: var(--black);
+                max-width: 588px;
+            }
+        }
+    }
+}

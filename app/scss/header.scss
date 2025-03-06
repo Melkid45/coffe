@@ -36,8 +36,11 @@
                 background: var(--white);
                 border: 1px solid var(--med-grey);
                 padding-left: 16px;
+                transition: all 0.3s ease;
             }
-
+            input:hover{
+                border-color: var(--yellow);
+            }
             input:placeholder {
                 color: var(--grey);
             }
@@ -154,7 +157,50 @@
         transform: translateX(0%);
     }
 }
-
+.header-soft{
+    .header__body{
+        border-bottom-color: var(--beige-dark);
+    }
+    li{
+        color: var(--black) !important;
+        svg{
+            path{
+                stroke: var(--black);
+            }
+        }
+    }
+    .header__body-action{
+        a{
+            background: var(--beige-dark);
+            svg{
+                path{
+                    stroke: var(--black);
+                }
+            }
+        }
+        button{
+            background: var(--black);
+            span{
+                color: var(--white);
+            }
+            svg{
+                path{
+                    stroke: var(--white);
+                }
+            }
+        }
+    }
+    .second{
+        opacity: 1 !important;
+    }
+    .hamburger{
+        svg{
+            path{
+                stroke: var(--black);
+            }
+        }
+    }
+}
 .header {
     width: 100%;
 

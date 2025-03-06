@@ -49,7 +49,7 @@
     letter-spacing: 0px;
 }
 
-.h3-regular{
+.h3-medium{
     font-family: var(--rubik);
     font-weight: 500;
     font-size: 32px;
@@ -143,6 +143,15 @@
 .btn-black:hover{
     background: var(--yellow) !important;
     border-color: transparent;
+    color: var(--black) !important;
+    svg{
+        path{
+            stroke: var(--black) !important;
+        }
+    }
+    span{
+        color: var(--black) !important;
+    }
 }
 .btn-yellow{
     transition: all 0.3s ease;
@@ -150,7 +159,6 @@
 .btn-yellow:hover{
     background: var(--yellow-dark) !important;
 }
-
 .links-white{
     transition: all 0.3s ease;
 }

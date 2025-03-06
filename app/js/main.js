@@ -14,9 +14,43 @@ for (let elm of elements) {
     observer.observe(elm);
 }
 
-
+$('.find').on('click', function(e){
+    $('.catalog__body-filter-block-search').addClass('active')
+    $('body').addClass('hidden')
+})
+$('.back__search').on('click', function(e){
+    $('.catalog__body-filter-block-search').removeClass('active')
+    $('body').removeClass('hidden')
+})
+$('.based').on('click', function(e){
+    $('.catalog__body-filter-block-mobile').addClass('active')
+    $('body').addClass('hidden')
+})
+$('.based__back').on('click', function(e){
+    $('.catalog__body-filter-block-mobile').removeClass('active')
+    $('body').removeClass('hidden')
+})
 document.querySelector('.top-btn').addEventListener('click', function(e){
     window.scrollTo(0,0)
+})
+$('.catalog__search').on('input', function(e){
+    if ($(this).val() != 0){
+        $('.reset__button').addClass('active')
+    }else{
+        $('.reset__button').removeClass('active')
+    }
+})
+$('.recipe__body-main-user-top button').on('click', function(e){
+    $(this).addClass('active')
+    $('.recipe__body-main-user-top button').not(this).removeClass('active')
+    let index = $(this).index() + 1
+    $('.recipe__body-main-user-section').each(function(e){
+        if($(this).index() == index){
+            $(this).removeClass('none')
+        }else{
+            $(this).addClass('none')
+        }
+    })
 })
 
 // document.querySelector('.menu-recipes').addEventListener('click', function(e){
